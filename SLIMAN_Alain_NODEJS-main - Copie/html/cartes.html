@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harry Potter Site - Carte</title>
+    <link rel="stylesheet" href="css/cartes.css">
+</head>
+<body>
+    <nav class="sidenav">
+        <a href="homepage.html"><button class="fill-bottom">Accueil</button></a>
+        <a href="cartes.html"><button class="fill-bottom">Cartes</button></a>
+        <a href="profile.html"><button class="fill-bottom">Profil</button></a>
+        <a href="login.html"><button class="fill-bottom">Connexion</button></a>
+        <a href="booster.html"><button class="fill-bottom">Boosters</button></a>
+    </nav>
+    <header>
+        <h1>Liste de Cartes</h1>
+        <label for="house-filter">Filtrer par maison :</label>
+        <select id="house-filter">
+            <option value="">Toutes les maisons</option>
+            <option value="Gryffindor">Gryffindor</option>
+            <option value="Slytherin">Slytherin</option>
+            <option value="Hufflepuff">Hufflepuff</option>
+            <option value="Ravenclaw">Ravenclaw</option>
+        </select>
+        <button id="filter-button">Filtrer</button>
+    </header>
+
+    <div id="card-container" class="container"></div>
+    <script src="js/cartes.js"></script>
+</body>
+</html>

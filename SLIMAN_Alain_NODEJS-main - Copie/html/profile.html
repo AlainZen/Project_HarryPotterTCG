@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profil de l'utilisateur</title>
+    <link rel="stylesheet" href="css/profile.css" />
+</head>
+<body>
+    <nav class="sidenav">
+        <a href="homepage.html"><button class="fill-bottom">Accueil</button></a>
+        <a href="cartes.html"><button class="fill-bottom">Cartes</button></a>
+        <a href="profile.html"><button class="fill-bottom">Profil</button></a>
+        <a href="login.html"><button class="fill-bottom">Connexion</button></a>
+        <a href="booster.html"><button class="fill-bottom">Boosters</button></a>
+    </nav> 
+
+    <div class="profile-banner">
+        <div class="profile-info">
+            <img src="/html/images/logo2.jpeg" alt="Photo de profil" />
+            <div class="user-info">
+                <p>Pseudo: <span id="pseudo"></span></p>
+                <p>Email: <span id="email"></span></p>
+            </div>
+        </div>
+        <div class="profile-buttons">
+            <button onclick="showOwnedCards()">Voir les cartes possédées</button>
+            <button onclick="showFavoriteCards()">Voir les cartes favorites</button>
+        </div>
+    </div>
+
+    <div id="card-display" class="card-display"></div>
+
+    <script src="js/profile.js"></script>
+</body>
+</html>
+<!--<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profil de l'utilisateur</title>
+    <link rel="stylesheet" href="css/profile.css" />
+  </head>
+  <body>
+    <nav class="sidenav">
+      <a href="homepage.html"><button class="fill-bottom">Accueil</button></a>
+      <a href="cartes.html"><button class="fill-bottom">Cartes</button></a>
+      <a href="profile.html"><button class="fill-bottom">Profil</button></a>
+      <a href="login.html"><button class="fill-bottom">Connexion</button></a>
+      <a href="booster.html"><button class="fill-bottom">Boosters</button></a>
+  </nav> 
+
+    <div class="profile-banner">
+      <div class="profile-info">
+        <img src="/html/images/logo2.jpeg" alt="Photo de profil" />
+        <div class="user-info">
+          <p>Pseudo: <span id="pseudo"></span></p>
+          <p>Email: <span id="email"></span></p>
+        </div>
+      </div>
+      <div class="profile-buttons">
+        <button onclick="showOwnedCards()">Voir les cartes possédées</button>
+        <button onclick="showFavoriteCards()">Voir les cartes favorites</button>
+      </div>
+    </div>
+
+    <script src="js/profile.js"></script>
+  </body>
+</html>

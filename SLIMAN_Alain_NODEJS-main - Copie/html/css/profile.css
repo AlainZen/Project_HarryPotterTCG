@@ -1,0 +1,139 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: "Harry P";
+  box-sizing: border-box;
+}
+
+/*---------------------------------------------------------------------Navbar*/
+.sidenav {
+  background-color: #24134b;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  width: 100%;
+  z-index: 99;
+  top: 0;
+}
+
+.fill-bottom {
+  position: relative;
+  height: 45px;
+  width: 150px;
+  margin: 10px 7px;
+  padding: 5px 5px;
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 2px;
+  color: #ffffff;
+  border: 2px #ac90e4 solid;
+  border-radius: 4px;
+  text-transform: uppercase;
+  outline: 0;
+  overflow: hidden;
+  background: none;
+  cursor: pointer;
+}
+
+.fill-bottom::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  background-color: #000000;
+  z-index: -1;
+  transition: height 0.3s ease;
+}
+
+.fill-bottom:hover::before {
+  height: 100%;
+}
+
+/*---------------------------------------------------------------------Navbar*/
+
+/*---------------------------------------------------------------------Profile*/
+.p {
+  color: aqua;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: xx-large;
+}
+
+.profile-banner {
+  background: linear-gradient(rgb(154, 113, 249), rgb(117, 59, 252), rgb(96, 32, 247),rgb(32, 2, 101));
+  background-size: auto;
+  animation: color 4s ease-in-out infinite;
+  color: #ffffff;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.profile-info img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.user-info h2 {
+  margin: 0;
+}
+
+.user-info p {
+  margin: 5px 0;
+}
+
+.profile-buttons {
+  margin-bottom: 20px;
+}
+
+button {
+  background-color: #740001;
+  color: #fff;
+  border: solid 1px #ffd900;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.card-display {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 10px;
+  width: 150px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.card h3 {
+  margin-top: 10px;
+  font-size: 1.1em;
+  color: #333;
+}
+/*---------------------------------------------------------------------Profile*/

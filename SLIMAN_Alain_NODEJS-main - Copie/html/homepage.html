@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Harry Potter Site</title>
+    <link rel="stylesheet" href="css/homepage.css" />
+  </head>
+  <body>
+    <nav class="sidenav">
+      <a href="homepage.html"><button class="fill-bottom">Accueil</button></a>
+      <a href="cartes.html"><button class="fill-bottom">Cartes</button></a>
+      <a href="profile.html"><button class="fill-bottom">Profil</button></a>
+      <a href="login.html"><button class="fill-bottom">Connexion</button></a>
+      <a href="booster.html"><button class="fill-bottom">Boosters</button></a>
+  </nav> 
+    <button id="openModalBtn" class="floating-btn">Échanger une carte</button>
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span id="closeModalBtn" class="close">&times;</span>
+        <h2>Formulaire d'échange</h2>
+        <form id="exchangeForm">
+          <label for="cardName">Nom de la carte :</label>
+          <input type="text" id="cardName" name="cardName" required />
+
+          <button type="submit">Envoyer</button>
+        </form>
+      </div>
+    </div>
+    <div class="wrapper">
+      <div class="container">
+        <input type="radio" name="slide" id="c1" checked />
+        <label for="c1" class="card">
+          <div class="row">
+            <div class="icon">1</div>
+            <div class="description">
+              <h4>Wizarding World</h4>
+              <p>Bienvenue dans le monde de Harry Potter</p>
+              <button id="c1b1" class="floating-btn">Homepage</button>
+            </div>
+          </div>
+        </label>
+        <input type="radio" name="slide" id="c2" />
+        <label for="c2" class="card">
+          <div class="row">
+            <div class="icon">2</div>
+            <div class="description">
+              <h4>Trading Cartes</h4>
+              <p>Découvrer les cartes a collectioner Harry Potter</p>
+              <button id="c2b2" class="floating-btn">Cartes</button>
+            </div>
+          </div>
+        </label>
+      </label>
+      <input type="radio" name="slide" id="c3" />
+      <label for="c3" class="card">
+        <div class="row">
+          <div class="icon">3</div>
+          <div class="description">
+            <h4>Booster</h4>
+            <p>Venez ouvrir votre booster hebdomadaire</p>
+            <button id="c3b3" class="floating-btn">Booster</button>
+          </div>
+        </div>
+      </label>
+    </label>
+    <input type="radio" name="slide" id="c4" />
+    <label for="c4" class="card">
+      <div class="row">
+        <div class="icon">4</div>
+        <div class="description">
+          <h4>Inscription</h4>
+          <p>Rejoignez-nous dans cette magnifique aventure</p>
+          <button id="c4b4" class="floating-btn">S'inscrire</button>
+        </div>
+      </div>
+    </label>
+      </div>
+    </div>
+    <script src="js/homepage.js"></script>
+  </body>
+</html>

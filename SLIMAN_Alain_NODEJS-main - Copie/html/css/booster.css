@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "Harry P";
+}
+
+body {
+  background-image: url("/html/images/b3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover; 
+  background-position: center; /* Centre l'image de fond */
+  background-attachment: fixed; /* Garde l'image de fond fixe */
+}
+  :root {
+    --accent-color: #fff;
+    --gradient-color: #fbfbfb;
+  }
+/*---------------------------------------------------------------------Navbar*/
+.sidenav {
+  background-color: #24134b;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  width: 100%;
+  z-index: 99;
+  top: 0;
+}
+
+.fill-bottom {
+  position: relative;
+  height: 45px;
+  width: 150px;
+  margin: 10px 7px;
+  padding: 5px 5px;
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 2px;
+  color: #ffffff;
+  border: 2px #ac90e4 solid;
+  border-radius: 4px;
+  text-transform: uppercase;
+  outline: 0;
+  overflow: hidden;
+  background: none;
+  cursor: pointer;
+}
+
+.fill-bottom::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  background-color: #000000;
+  z-index: -1;
+  transition: height 0.3s ease;
+}
+
+.fill-bottom:hover::before {
+  height: 100%;
+}
+
+/*---------------------------------------------------------------------Navbar*/
+/*----------------------------------------------------------------------Boutton*/
+
+.OBoost {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #542f2f;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    position: relative;
+}
+
+.OBoost:hover {
+    background-color: #7e2929;
+}
+
+/*----------------------------------------------------------------------Boutton*/
+
+
+/* ----------------------------------------------------------------------card container*/
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+  padding-top: 10px;
+}
+
+@property --gradient-angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+
+:root {
+  --clr-1: #dedbdb;
+  --clr-2: #e2e3e4;
+  --clr-3: #ffffff;
+  --clr-4: #d3d3d3;
+  --clr-5: #7d7d7d;
+}
+
+.card {
+  height: 60vh;
+  aspect-ratio: 1 / 1.5;
+  background: var(--clr-1);
+  border-radius: 0.5rem;
+
+  position: relative;
+}
+
+.card::before,
+.card::after {
+  content: "";
+  position: absolute;
+  inset: -0.5rem;
+  z-index: -1;
+  background: conic-gradient(
+    from var(--gradient-angle),
+    var(--clr-3),
+    var(--clr-4),
+    var(--clr-5),
+    var(--clr-4),
+    var(--clr-3)
+  );
+  border-radius: inherit;
+  animation: rotation 20s linear infinite;
+}
+
+.card::after {
+  filter: blur(3.5rem);
+}
+
+@keyframes rotation {
+  /*c'est magnifique wlh*/
+  0% {
+    --gradient-angle: 0deg;
+  }
+  100% {
+    --gradient-angle: 360deg;
+  }
+}
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  /*pas les meilleur dim mais ça va ça passe*/
+  width: 90%;
+  height: 80%;
+  object-fit: cover;
+  border-bottom: none;
+}
+
+.card-details {
+  padding: 5px;
+}
+
+.card-name {
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: none;
+  color: white;
+}
+
+.card-link:hover {
+  background-color: #dcdcdc;
+}
+
+/* ----------------------------------------------------------------------card container*/

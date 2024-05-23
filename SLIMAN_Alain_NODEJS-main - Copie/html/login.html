@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harry Potter Site</title>
+    <link rel="stylesheet" href="css/log.css">
+</head>
+<body>
+    <nav class="sidenav">
+        <a href="homepage.html"><button class="fill-bottom">Accueil</button></a>
+        <a href="cartes.html"><button class="fill-bottom">Cartes</button></a>
+        <a href="profile.html"><button class="fill-bottom">Profil</button></a>
+        <a href="login.html"><button class="fill-bottom">Connexion</button></a>
+        <a href="booster.html"><button class="fill-bottom">Boosters</button></a>
+    </nav>  
+    <div class="container" id="container">
+        <div class="form-container sign-up">
+            <form id="sign-up-form">
+                <h1>Crée un Compte</h1>
+                <input type="email" placeholder="Email" name="signup-email" id="signup-email" required>
+                <input type="text" placeholder="Pseudo" name="signup-pseudo" id="signup-pseudo" required>
+                <input type="password" placeholder="Password" name="signup-password" id="signup-password" required>
+                <button type="button" onclick="signUp()">S'inscrire</button>
+            </form>
+        </div>
+        <div class="form-container sign-in">
+            <form id="login-form">
+                <h1>Connexion</h1>
+                <input type="email" placeholder="Email" name="login-email" id="login-email" required>
+                <input type="password" placeholder="Password" name="login-password" id="login-password" required>
+                <a href="#">Mot de Passe oublié ?</a>
+                <button type="submit">Se Connecter</button>
+            </form>
+        </div>
+        <div class="toggle-container">
+            <div class="toggle">
+                <div class="toggle-panel toggle-left">
+                    <h1>Déjà de retour jeune sorcier ?</h1>
+                    <p>Déjà inscrit ? Connecte-toi</p>
+                    <button class="hidden" id="login" onclick="showSignIn()">Connectez-vous</button>
+                </div>
+                <div class="toggle-panel toggle-right">
+                    <h1>Bienvenue Jeune Sorcier</h1>
+                    <p>Inscrivez-vous !! et découvrez à quelle maison vous appartenez</p>
+                    <button class="hidden" id="register" onclick="showSignUp()">Inscrivez-vous</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/login.js"></script>
+    <script src="js/signup.js"></script>
+    
+</body>
+</html>
